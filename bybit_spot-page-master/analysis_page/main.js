@@ -16,7 +16,7 @@ let roiChart = new Chart(ROI, {
       datasets: [
         {
         label: 'Cumulative ROI of the Spot Account',
-        data: [1.96, 1.78, 2.33, 2.18, 2.13, 3.23, 4.27],
+        data: [0.52, 0.51, 1.11, 1.09, 1.13 , 4.45,  4.83],
         borderWidth: 2,
         pointStyle:"circle",
         borderColor: "#f7a600",
@@ -26,7 +26,7 @@ let roiChart = new Chart(ROI, {
       },
       {
         label: 'Cumulative price change of BTC (%)',
-        data: [-0.63, 2.35, 0.2, 0.3, 1.31, 1.97, 5.06],
+        data: [1.12, 0.86, 0.95, 1.97, 2.61, 5.74, 7.44],
         borderWidth: 0.8,
         pointStyle:"circle",
         borderColor: "#ffc107",
@@ -98,7 +98,7 @@ let profitChart = new Chart(Profits, {
     labels: ['2023-11-03', '', '', '', '', '', '2023-11-09'],
     datasets: [{
       label: 'Cumulative Profits ',
-      data: [-5.5, 10.5, 10, 29.4, 29.2, 30.2, 138.92],
+      data: [ 16, 15.8, 34.7, 34.7, 34.9, 143.34, 156.2],
       borderWidth: 1.5,
       backgroundColor: "#f7a600",
       borderColor: "#f7a600",
@@ -147,8 +147,8 @@ let plChart = new Chart(PL, {
     labels: ['2023-11-03', '', '', '', '', '', '2023-11-09'],
     datasets: [{
       label: 'P&L ',
-      data: [-5.5, 16, -0.5, 18.9, -0.02, 1, 108.52],
-      backgroundColor: ["#ef454a", "#20b26c", "#ef454a", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#ef454a", "#20b26c","#20b26c", "#20b26c", "#20b26c", "#20b26c", "#ef454a", "#ef454a", "#20b26c","#20b26c", "#20b26c", "#20b26c", "#ef454a", "#20b26c", "#ef454a", "#20b26c","#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c"],
+      data: [ 16, -0.5, 18.9, -0.02, 1, 108.52, 13.02],
+      backgroundColor: ["#20b26c", "#ef454a", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#ef454a", "#20b26c","#20b26c", "#20b26c", "#20b26c", "#20b26c", "#ef454a", "#ef454a", "#20b26c","#20b26c", "#20b26c", "#20b26c", "#ef454a", "#20b26c", "#ef454a", "#20b26c","#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c"],
     }]
   },
   options: {
@@ -233,7 +233,7 @@ daysLi.forEach((li) => {
           '',
           '2023-11-07',
           ];
-          plChart.data.datasets[0].data =  [-5, 0, 0, 13.4, -4, 2, -3,
+          plChart.data.datasets[0].data =  [6, 0, 0, 13.4, -4, 2, -3,
             10,
             13.2, -6.3, 15.40, 18.73, -1.5, 21.62, 14.72, 18.6 , 45.6, 55.6, -5.8, -11.31, 3.1, 26.6, 28.2, 25.5, -11.5, 13.5, -5.6, 
           ];
