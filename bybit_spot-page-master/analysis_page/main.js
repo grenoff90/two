@@ -12,11 +12,11 @@ Chart.defaults.font.size = 10;
 let roiChart = new Chart(ROI, {
     type: 'line',
     data: {
-      labels: [ '11-04', '11-05', '11-06', '11-07', '11-08', '11-09', '11-10'],
+      labels: [  '11-06', '11-07', '11-08', '11-09', '11-10', '11-11', '11-12' ],
       datasets: [
         {
         label: 'Cumulative ROI of the Spot Account',
-        data: [0.52, 0.51, 1.11, 1.09, 1.13 , 4.45,  4.83],
+        data: [-0.02, 0.57, 0.54 , 3.84, 4.18, 4.16 , 4.45],
         borderWidth: 2,
         pointStyle:"circle",
         borderColor: "#f7a600",
@@ -26,7 +26,7 @@ let roiChart = new Chart(ROI, {
       },
       {
         label: 'Cumulative price change of BTC (%)',
-        data: [1.12, 0.86, 0.95, 1.97, 2.61, 5.74, 7.44],
+        data: [1.12, 0.86, 0.95, 1.97, 4.69, 6.38, 5.89],
         borderWidth: 0.8,
         pointStyle:"circle",
         borderColor: "#ffc107",
@@ -95,10 +95,10 @@ const Profits = document.getElementById('profits').getContext("2d");
 let profitChart = new Chart(Profits, {
   type: 'line',
   data: {
-    labels: ['2023-11-04', '', '', '', '', '', '2023-11-10'],
+    labels: ['2023-11-06', '', '', '', '', '', '2023-11-12'],
     datasets: [{
       label: 'Cumulative Profits ',
-      data: [ 16, 15.8, 34.7, 34.7, 34.9, 143.34, 156.2],
+      data: [ -0.5, 18.4, 17.4, 125.92, 138.94, 138.96, 151.34],
       borderWidth: 1.5,
       backgroundColor: "#f7a600",
       borderColor: "#f7a600",
@@ -144,11 +144,11 @@ const PL = document.getElementById('PL').getContext("2d");
 let plChart = new Chart(PL, {
   type: 'bar',
   data: {
-    labels: ['2023-11-04', '', '', '', '', '', '2023-11-10'],
+    labels: ['2023-11-06', '', '', '', '', '', '2023-11-12'],
     datasets: [{
       label: 'P&L ',
-      data: [ 16, -0.5, 18.9, 1, 108.52, 13.02 , -0.02],
-      backgroundColor: ["#20b26c", "#ef454a", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#20b26c", "#20b26c","#20b26c", "#ef454a", "#ef454a", "#20b26c", "#20b26c", "#20b26c", "#20b26c","#ef454a", "#20b26c", "#ef454a", "#20b26c", "#ef454a", "#20b26c", "#20b26c","#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c"],
+      data: [ -0.5, 18.9, 1, 108.52, 13.02 , -0.02, 12.42],
+      backgroundColor: [ "#ef454a", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#ef454a", "#20b26c", "#20b26c", "#20b26c", "#20b26c","#20b26c", "#ef454a", "#ef454a", "#20b26c", "#20b26c", "#20b26c", "#20b26c","#ef454a", "#20b26c", "#ef454a", "#20b26c", "#ef454a", "#20b26c", "#20b26c","#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c", "#20b26c","#20b26c",],
     }]
   },
   options: {
